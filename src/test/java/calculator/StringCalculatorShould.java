@@ -37,4 +37,9 @@ class StringCalculatorShould {
         StringCalculator sut = new StringCalculator();
         assertEquals(10, sut.calculate(";\n1;2;3;4"));
     }
+	 @Test
+    public void supportNewLineAsSeparator() {
+        StringCalculator sut = new StringCalculator();
+        assertEquals(6, sut.calculate("1\n2,3"));
+    }
 }
