@@ -27,4 +27,9 @@ class StringCalculatorShould {
         StringCalculator sut = new StringCalculator();
         assertEquals(77, sut.calculate("22,55"));
     }
+	 @Test
+    public void allowNnumersAsInput() {
+        StringCalculator sut = new StringCalculator();
+        assertEquals(45, sut.calculate("1,2,3,4,5,6,7,8,9"));
+    }
 }

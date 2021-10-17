@@ -38,7 +38,7 @@ class StringCalculator {
         return 0;
     }
 
-}
+
  private boolean isNumeric(String str) {
         try {
             Double.parseDouble(str);
@@ -47,3 +47,15 @@ class StringCalculator {
         }
         return true;
     }
+	      if (line == null || line.isEmpty()) {
+            return ',';
+        }
+        if (isNumeric(line)) {
+            return ',';
+        }
+        if (line.length() == 1) {
+            return line.charAt(0);
+        }
+        return ',';
+    }
+}
