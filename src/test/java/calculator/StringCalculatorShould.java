@@ -22,4 +22,9 @@ class StringCalculatorShould {
         StringCalculator sut = new StringCalculator();
         assertEquals(7, sut.calculate("2,5"));
     }
+	@Test
+    public void moreDigitsSupported() {
+        StringCalculator sut = new StringCalculator();
+        assertEquals(77, sut.calculate("22,55"));
+    }
 }
