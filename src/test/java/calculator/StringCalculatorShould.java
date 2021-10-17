@@ -17,4 +17,9 @@ class StringCalculatorShould {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(1, stringCalculator.add("1"));
     }
+	@Test
+    public void twoNumbersShouldBeAdded() {
+        StringCalculator sut = new StringCalculator();
+        assertEquals(7, sut.calculate("2,5"));
+    }
 }
