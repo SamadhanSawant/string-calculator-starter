@@ -32,4 +32,9 @@ class StringCalculatorShould {
         StringCalculator sut = new StringCalculator();
         assertEquals(45, sut.calculate("1,2,3,4,5,6,7,8,9"));
     }
+	@Test
+    public void supportForCustomDelimiter() {
+        StringCalculator sut = new StringCalculator();
+        assertEquals(10, sut.calculate(";\n1;2;3;4"));
+    }
 }
